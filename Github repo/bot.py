@@ -81,4 +81,4 @@ async def people(ctx):
         num += 1
     embed.set_footer(text='Source: http://api.open-notify.org/astros.json')
     await ctx.send(embed=embed)
-bot.run('TOKEN') # IDK how to make an env variable so this is temporary.
+bot.run(os.getenv('TOKEN'))
